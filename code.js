@@ -21,6 +21,7 @@ function quicksort(array) {
         let lesser = bot + 1;
         let tmp = 0;
 
+        // Needed this if statement because otherwise it was adding an "undefined" at the end of the sorted array
         if (top != bot) {
 
             for (let i = lesser; i <= top; i++) { // In it's worst case top would be the end of the array and the for loop 
